@@ -49,8 +49,8 @@
       <!-- WRAP PERSONAL DETAILS FORM IN CHILD PANEL --> 
       <div id="dvPersonalDetails">
         <div id="dvPersonalDetailsAlert" class="alert alert-warning personalDetailsAlert">Error Message</div>
-        <h1>Please enter your details</h1>
-        <p>In order to provide you with a quote, we need a few details. Please complete the form below. Thanks.</p>
+        <h1>Please provide your details</h1>
+        <p>In order to provide you with a quote, we will need a few details. Please complete the form below. Thanks.</p>
 
         <div class="row">
           <form class="form-horizontal">
@@ -70,17 +70,55 @@
             </div>
 
               <div class="form-group">
-                <label for="gender" class="col-md-2">Gender</label>
+                <label for="gender" class="control-label col-md-2">Gender</label> 
                 <div class= "col-md-4">
                   <input id="txtmale" type="radio" name="ageInput" class="personaldetails" value"f"> Male</input>
                   <input id="txtfemale" type="radio" name="ageInput" class="personaldetails" vaule="f"> Female</input>
+                </div>
+              </div>
+
+                  <div class="form-group">
+                    <label for="txttowncity" class="control-label col-md-2">Town/City</label>
+                      <div class="col-md-4">
+                        <input id="txtTown/City" type="text" name="txttowncity" class="form-control personalDetails" placeholder="Town/City">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="txtemailaddress" class="control-label col-md-2">Email Address</label>
+                      <div class="col-md-4">
+                        <input id="txtemailaddress" type="text" name="emailaddress" class="form-control personalDetails" placeholder="Email Address">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="txtnoclaimbonus" class="control-label col-md-2">No claim bonus (in years)</label>
+                      <div class="col-md-4">
+                        <select class="form-control personalDetails"> 
+                          <option> Select an option</option>
+                            <option>0</option>
+                             <option>1</option>
+                              <option>2</option>
+                               <option>3</option>
+                                <option>4</option>
+                                 <option>5</option>
+                                  <option>6</option>
+                                   <option>7</option>
+                                    <option>8</option>
+                                     <option>9</option>
+                                      <option>10</option>
+                                    </select>
+
+
+                                       </div>
+                                     </div>
 
               </div>
               </div>
             <!-- The code for the remainder of the personal fields will be added here -->
 
             <div class="form-group">
-              <div class="col-md-4">
+              <div class="col-md-1">
                 <input id="btnNext" value="Next" class="btn btn-default btn-sm btn-success" onclick="showCarDetails()" />
               </div>
             </div>
